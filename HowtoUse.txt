@@ -1,3 +1,5 @@
+DEMO影片：https://www.youtube.com/edit?video_id=w6y7CtC2mQ4&video_referrer=watch
+
 環境設置:
 
 將下載的opencv解壓縮至C槽，並設定環境變數path->新增路徑 C:\opencv\build\x86\MinGW32\bin
@@ -53,6 +55,8 @@ frame -N +N :a d
 3. 影片播放完成後，輸出相關分析資料。
 
 =============================================================================
+
+DEMO video here：https://www.youtube.com/edit?video_id=w6y7CtC2mQ4&video_referrer=watch
 
 Environment setting:
 Download opencv and extract it to disk C. Then add an path C:\opencv\build\x86\MinGW32\bin to environment parameter PATH.
