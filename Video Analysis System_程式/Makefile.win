@@ -1,0 +1,64 @@
+# Project: project_mic
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 20/11/17 09:35
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/project_micApp.o Objects/MingW/project_micFrm.o Objects/MingW/Record_mousePosFrm.o Objects/MingW/VisualizationFrm.o Objects/MingW/ManualAutoFrm.o Objects/MingW/heatmap.o Objects/MingW/RdYlGn.o Objects/MingW/Spectral.o Objects/MingW/project_mic_Vis_private.res
+LINKOBJ   = "Objects/MingW/project_micApp.o" "Objects/MingW/project_micFrm.o" "Objects/MingW/Record_mousePosFrm.o" "Objects/MingW/VisualizationFrm.o" "Objects/MingW/ManualAutoFrm.o" "Objects/MingW/heatmap.o" "Objects/MingW/RdYlGn.o" "Objects/MingW/Spectral.o" Objects/MingW/project_mic_Vis_private.res
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/lib/wx/gcc_lib" -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/opencv/build/x86/MinGW32/lib" -mwindows -l$(WXLIBNAME) -l$(WXLIBNAME)_gl -lwxscintilla -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregexu -lwxexpat -lkernel32 -luser32 -lgdi32 -lcomdlg32 -lwinspool -lwinmm -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32 -lopengl32  -g3 
+INCS      = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/opencv/build/include" -I"C:/opencv/build/include/opencv" -I"C:/opencv/build/include/opencv2"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common" -I"C:/opencv/build/include" -I"C:/opencv/build/include/opencv" -I"C:/opencv/build/include/opencv2"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common"
+BIN       = Output/MingW/project_mic_Vis.exe
+DEFINES   = -D__WXMSW__ -D__GNUWIN32__ -D_UNICODE
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -lopencv_calib3d310 -lopencv_core310 -lopencv_features2d310 -lopencv_flann310 -lopencv_highgui310 -lopencv_imgproc310 -lopencv_imgcodecs310 -lopencv_ml310 -lopencv_objdetect310 -lopencv_photo310 -lopencv_shape310 -lopencv_stitching310 -lopencv_superres310 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 -lopencv_tracking310 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 -g3
+CFLAGS    = $(INCS) $(DEFINES)   -lopencv_calib3d310 -lopencv_core310 -lopencv_features2d310 -lopencv_flann310 -lopencv_highgui310 -lopencv_imgproc310 -lopencv_imgcodecs310 -lopencv_ml310 -lopencv_objdetect310 -lopencv_photo310 -lopencv_shape310 -lopencv_stitching310 -lopencv_superres310 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 -lopencv_tracking310 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 -g3
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/project_micApp.o: $(GLOBALDEPS) project_micApp.cpp project_micApp.h project_micFrm.h
+	$(CPP) -c project_micApp.cpp -o Objects/MingW/project_micApp.o $(CXXFLAGS)
+
+Objects/MingW/project_micFrm.o: $(GLOBALDEPS) project_micFrm.cpp project_micFrm.h Record_mousePosFrm.h ManualAutoFrm.h VisualizationFrm.h heatmap.h RdYlGn.h Spectral.h
+	$(CPP) -c project_micFrm.cpp -o Objects/MingW/project_micFrm.o $(CXXFLAGS)
+
+Objects/MingW/Record_mousePosFrm.o: $(GLOBALDEPS) Record_mousePosFrm.cpp Record_mousePosFrm.h
+	$(CPP) -c Record_mousePosFrm.cpp -o Objects/MingW/Record_mousePosFrm.o $(CXXFLAGS)
+
+Objects/MingW/VisualizationFrm.o: $(GLOBALDEPS) VisualizationFrm.cpp VisualizationFrm.h Global.h
+	$(CPP) -c VisualizationFrm.cpp -o Objects/MingW/VisualizationFrm.o $(CXXFLAGS)
+
+Objects/MingW/ManualAutoFrm.o: $(GLOBALDEPS) ManualAutoFrm.cpp ManualAutoFrm.h Global.h
+	$(CPP) -c ManualAutoFrm.cpp -o Objects/MingW/ManualAutoFrm.o $(CXXFLAGS)
+
+Objects/MingW/heatmap.o: $(GLOBALDEPS) heatmap.c heatmap.h
+	$(CPP) -c heatmap.c -o Objects/MingW/heatmap.o $(CXXFLAGS)
+
+Objects/MingW/RdYlGn.o: $(GLOBALDEPS) RdYlGn.c heatmap.h RdYlGn.h
+	$(CPP) -c RdYlGn.c -o Objects/MingW/RdYlGn.o $(CXXFLAGS)
+
+Objects/MingW/Spectral.o: $(GLOBALDEPS) Spectral.c heatmap.h Spectral.h
+	$(CPP) -c Spectral.c -o Objects/MingW/Spectral.o $(CXXFLAGS)
+
+Objects/MingW/project_mic_Vis_private.res: Objects/MingW/project_mic_Vis_private.rc project_micApp.rc 
+	$(WINDRES) --input-format=rc -o Objects/MingW/project_mic_Vis_private.res $(RCINCS) Objects/MingW/project_mic_Vis_private.rc -O coff

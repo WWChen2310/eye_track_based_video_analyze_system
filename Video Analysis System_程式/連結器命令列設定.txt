@@ -1,0 +1,11 @@
+-lopencv_calib3d2410 -lopencv_contrib2410 -lopencv_core2410 -lopencv_features2d2410 -lopencv_flann2410 -lopencv_gpu2410 -lopencv_highgui2410 -lopencv_imgproc2410 -lopencv_legacy2410 -lopencv_ml2410 -lopencv_nonfree2410 -lopencv_objdetect2410 -lopencv_photo2410 -lopencv_stitching2410 -lopencv_ts2410 -lopencv_video2410
+
+-lopencv_calib3d2410d -lopencv_contrib2410d -lopencv_core2410d -lopencv_features2d2410d -lopencv_flann2410d -lopencv_gpu2410d -lopencv_highgui2410d -lopencv_imgproc2410d -lopencv_legacy2410d -lopencv_ml2410d -lopencv_nonfree2410d -lopencv_objdetect2410d -lopencv_photo2410d -lopencv_stitching2410d -lopencv_ts2410d -lopencv_video2410d
+
+-lopencv_calib3d300 -lopencv_contrib300 -lopencv_core300 -lopencv_features2d300 -lopencv_flann300 -lopencv_gpu300 -lopencv_highgui300 -lopencv_imgproc300 -lopencv_legacy300 -lopencv_ml300 -lopencv_nonfree300 -lopencv_objdetect300 -lopencv_photo300 -lopencv_stitching300 -lopencv_ts300 -lopencv_video300
+
+-lopencv_calib3d300 -lopencv_core300 -lopencv_features2d300 -lopencv_flann300 -lopencv_highgui300 -lopencv_imgproc300 -lopencv_imgcodecs300 -lopencv_ml300 -lopencv_objdetect300 -lopencv_photo300 -lopencv_shape300 -lopencv_stitching300 -lopencv_superres300 -lopencv_video300 -lopencv_videoio300 -lopencv_videostab300
+
+-lopencv_tracking300 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 
+
+-lopencv_calib3d310 -lopencv_core310 -lopencv_features2d310 -lopencv_flann310 -lopencv_highgui310 -lopencv_imgproc310 -lopencv_imgcodecs310 -lopencv_ml310 -lopencv_objdetect310 -lopencv_photo310 -lopencv_shape310 -lopencv_stitching310 -lopencv_superres310 -lopencv_video310 -lopencv_videoio310 -lopencv_videostab310 -lopencv_tracking310
